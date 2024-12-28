@@ -1,0 +1,60 @@
+/* Sign-in form styles */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signin-container {
+    width: 20%;
+    box-shadow: #4f5761;
+    margin: 30px;
+    padding: 10px;
+  }
+  
+  .submitBtn {
+    background: #fa8232;
+  }
+  
+  .switch-heading {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 10px;
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .tab.active {
+    color: #f57c00; /* Orange color for active */
+  }
+  
+  .tab.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #f57c00; /* Orange underline */
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .tab:not(.active):hover {
+    color: #f57c00;
+  }
+  
+  .switch-heading .tab + .tab {
+    margin-left: 20px; /* Space between tabs */
+  }
+  
